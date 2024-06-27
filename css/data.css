@@ -2,6 +2,6 @@
 :root{
     --black: #000;
     --purple: #f0f;
-    /* CSS syntax is hypens, don't try to tell me snakecase */
+    /* CSS syntax is hyphens, don't try to tell me snakecase */
     --purple-accent: #671367;
 }
