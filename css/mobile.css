@@ -149,3 +149,20 @@ form h3{
     font-size: 1em;
     padding: 1em;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+    padding-top: 0.3em;
+}
+
+footer h3{
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
