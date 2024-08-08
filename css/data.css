@@ -7,6 +7,26 @@
     --white: #edf5ed;
 }
 
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    
+}
+
+html {
+    background: var(--black);
+}
+
+.radial{
+    border-radius: 15px;
+    background: var(--purple-accent);
+    background: radial-gradient(circle at center, var(--purple), var(--purple-accent));
+}
+
 h1,
 h2,
 h3,

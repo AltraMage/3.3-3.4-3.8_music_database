@@ -1,13 +1,5 @@
 @import url(data.css);
 
-html {
-    background: var(--black);
-}
-
-.radial{
-    background: radial-gradient(circle at center, var(--purple), var(--purple-accent));
-}
-
 header {
     display: flex;
     float: left;
@@ -15,8 +7,8 @@ header {
     height: 20%;
     background: var(--purple);
     border-radius: 15px;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
+    border-top-left-radius: 80px !important;
+    border-bottom-left-radius: 80px !important;
     margin: 1em 0;
 }
 
@@ -61,6 +53,7 @@ nav ul{
 
 main {
     align-items: center;
+    min-height: 1vh;
 }
 
 form{
@@ -133,4 +126,26 @@ form h3{
     font-size: 2em;
     letter-spacing: 1.5vw;
     text-align: center;
+}
+
+.about{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.about h3{
+    font-size: 2em;
+    letter-spacing: 1.2vw;
+    text-align: center;
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.about p{
+    margin-top: 0;
+    font-size: 1em;
+    padding: 1em;
 }
