@@ -175,3 +175,52 @@ footer h3 {
     padding-top: 0.5em;
     margin-bottom: 0;
 }
+
+/*
+    _    ____  __  __ ___ _   _ 
+   / \  |  _ \|  \/  |_ _| \ | |
+  / _ \ | | | | |\/| || ||  \| |
+ / ___ \| |_| | |  | || || |\  |
+/_/   \_\____/|_|  |_|___|_| \_|
+               */
+.slideshow {
+    position: relative;
+}
+
+.slide {
+    height: 300px;
+    display: inherit;
+    justify-content: center;
+    margin: auto;
+}
+
+.slideshow .changer{
+    font-size: 2em;
+    border-radius: 25px;
+    font-weight: 500;
+  }
+
+#right{
+    position: absolute;
+    right: 4%;
+}
+
+#left{
+    position: absolute;
+    left: 4%;
+}
+
+#left, #right{
+    top: 50%;
+    z-index: 1;
+}
+
+.slide form{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    margin: auto;
+
+}

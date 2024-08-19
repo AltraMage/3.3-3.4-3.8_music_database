@@ -22,7 +22,7 @@
 		</ul>
 	</nav>
 	<div class="table">
-		<table border="3">
+		<table>
 			<thead>
 				<tr>
 					<th>ID</th>
@@ -1293,13 +1293,12 @@
 REMEBER: All REFERENCES ARE FROM THE ROOT DIRECTORY.
 ./admin/ NEEDS TO BE SPECIFIED!!
 -->
-	<script src="./Browse Music _ Graeme&#39;s Grooves (admin)_files/slideshow.js"></script>
-	<link rel="stylesheet" href="./Browse Music _ Graeme&#39;s Grooves (admin)_files/style(1).css">
-	<div class="slideshow">
-		<button id="left" onclick="prev()">left</button>
-		<button id="right" onclick="next()">right</button>
+	<script defer src="./js/slideshow.js"></script>
+	<div class="slideshow" id="slideshow">
+		<button class="changer" id="left" onclick="prev()">left</button>
+		<button class="changer" id="right" onclick="next()">right</button>
 
-		<div class="slide">
+		<div class="slide radial" id="slide"> <!-- Add a new user -->
 			<h3>Add a new user</h3>
 			<form class="new-user" method="post" id="login-form">
 				<div id="username centred">
@@ -1317,7 +1316,8 @@ REMEBER: All REFERENCES ARE FROM THE ROOT DIRECTORY.
 			</form>
 		</div>
 
-		<div class="slide">
+		<div class="slide radial" id="slide"> <!-- Delete user -->
+			<h3>Delete a user</h3>
 			<form action="https://projectspace.nz/ypyprbja/grames_grooves/admin/delete_user.php" method="post">
 				<label for="users">Select a User:</label>
 				<select name="users" id="users">
@@ -1339,7 +1339,8 @@ REMEBER: All REFERENCES ARE FROM THE ROOT DIRECTORY.
 			</form>
 		</div>
 
-		<div class="slide">
+		<div class="slide radial" id="slide"> <!-- Update password -->
+			<h3>Update a password</h3>
 			<form action="https://projectspace.nz/ypyprbja/grames_grooves/admin/update_password.php" method="post">
 				<label for="username">Select a User:</label>
 				<select name="username" id="username">
