@@ -183,44 +183,17 @@ footer h3 {
  / ___ \| |_| | |  | || || |\  |
 /_/   \_\____/|_|  |_|___|_| \_|
                */
-.slideshow {
-    position: relative;
-}
-
-.slide {
-    height: 300px;
-    display: inherit;
-    justify-content: center;
+.slideshow{
+    min-height: 250px;
+    width: 100%;
     margin: auto;
 }
 
-.slideshow .changer{
-    font-size: 2em;
-    border-radius: 25px;
-    font-weight: 500;
-  }
-
-#right{
-    position: absolute;
-    right: 4%;
-}
-
-#left{
-    position: absolute;
-    left: 4%;
-}
-
-#left, #right{
-    top: 50%;
-    z-index: 1;
+.slide{
+    width: min-content;
 }
 
 .slide form{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 70%;
-    margin: auto;
-
+    border: 2px dotted #000;
+    display: inline;
 }

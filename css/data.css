@@ -64,6 +64,10 @@ li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+h3{
+    text-align: center;
+}
+
 @keyframes huechange {
     from {
         filter: hue-rotate(0);
@@ -124,19 +128,6 @@ thead th {
     top: 0;
 }
 
-/*
-    ____          _                     ____                          
-   / ___|   _ ___| |_ ___  _ __ ___    / ___|   _ _ __ ___  ___  _ __ 
-  | |  | | | / __| __/ _ \| '_ ` _ \  | |  | | | | '__/ __|/ _ \| '__|
-  | |__| |_| \__ \ || (_) | | | | | | | |__| |_| | |  \__ \ (_) | |   
-   \____\__,_|___/\__\___/|_| |_| |_|  \____\__,_|_|  |___/\___/|_|  
-                                                                          
-  */
-
-
-body:hover {
-    cursor: url('https://projectspace.nz/ypyprbja/grames_grooves/logan-32.png'), auto;
-}
 
 .table {
     box-sizing: border-box;
