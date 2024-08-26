@@ -185,7 +185,7 @@ footer h3 {
                */
 .slideshow{
     position: relative;
-    height: 250px;
+    height: 300px;
     width: 500px;
     margin: auto;
 }
@@ -200,6 +200,11 @@ footer h3 {
     /* border: 2px dotted #000; */
     display: inline;
     padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    text-align: center;
 }
 .slideshow #left, .slideshow #right{
     position: absolute;
@@ -211,4 +216,8 @@ footer h3 {
 
 .slideshow #right{
     right: 0;
+}
+
+.slide select, .slide input, .slide button{
+    align-self: center;
 }
