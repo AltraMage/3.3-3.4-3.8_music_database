@@ -2,30 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graeme's Grooves | Log In</title>
-    <link rel="stylesheet" media="screen and (min-width: 601px)" href="./css/desktop.css" />
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobile.css" />
-    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <title>Log In | Graeme's Grooves</title>
+    <link rel="stylesheet" href="./css/styling.css" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.133.1/build/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
-    <header>
-        <img src="" alt="" />
-        <h1></h1>
+    <header class="radial">
+        <img id='logo' onclick="location.href='index.html'" src="https://cdn-icons-png.flaticon.com/512/26/26554.png"
+            alt="Music disc with white details free icon" title="Music disc with white details free icon">
+            <h1>Graeme's</h1>
+        <h1 class="right"><br>Grooves</h1>
     </header>
     <nav>
-        <ul id="nav">
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul id="nav" class="radial">
+            <li><a href="">Home</a></li>
+            <li><a href="welcome.html">Songs</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Log out</a></li>
         </ul>
     </nav>
     <main>
-        <section class="login"></section>
+        <form class="login radial" method="post" id="login-form">
+            <h3 class="centred">Sign in!</h3>
+            <div id="username centred">
+                <input type="text" name="username" placeholder="Username" required="">
+            </div>
+            <br>
+            <div id="password centred">
+                <input type="password" name="password" placeholder="Password" required="">
+
+            </div>
+            <br>
+            <div id="login-button centred"><button>Login</button></div>
+        </form>
+        <div class="about radial">
+            <h3 class="centred">About</h3>
+            <p>Graeme's Grooves is a music streaming service that allows you to listen to your favourite songs on the
+                go. With a wide range of songs to choose from, you can listen to your favourite songs wherever you are.
+                Sign up today to start listening!</p>
+
+        </div>
+
     </main>
-    <footer></footer>
+    <footer class="radial">
+        <h3>© Logan Simonsen 2024, Made on behalf of Graeme. <br>All rights reserved.</h3>
+    </footer>
+
 </body>
 
 </html>

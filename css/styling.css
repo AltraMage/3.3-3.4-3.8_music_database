@@ -1,0 +1,223 @@
+@import url(data.css);
+
+header {
+    display: flex;
+    float: left;
+    width: 100%;
+    height: 20%;
+    background: var(--purple);
+    border-radius: 15px;
+    border-top-left-radius: 80px !important;
+    border-bottom-left-radius: 80px !important;
+    margin: 1em 0;
+}
+
+header img {
+    background: var(--white);
+    border-radius: 100%;
+    animation: spin 5s linear infinite;
+}
+
+
+header img {
+    max-width: 128px;
+    max-height: 128px;
+    aspect-ratio: 1 / 1;
+}
+
+ul .admin-only {
+    display: none;
+}
+
+.right {
+    text-align: right;
+}
+
+a {
+    font-size: 1.5em;
+    color: var(--white);
+    text-decoration: none;
+    transform: translateY(-50%);
+}
+
+li {
+    display: inline;
+    padding: 0 1em;
+}
+
+nav ul {
+    background: var(--purple-accent);
+    border: 2px solid var(--purple-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: justify;
+    justify-content: space-around;
+    padding: 0;
+    height: 3em;
+    border-radius: 15px;
+}
+
+main {
+    align-items: center;
+    min-height: 1vh;
+}
+
+form {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    border-radius: 15px;
+}
+
+.login div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    /* background: var(--purple-accent); */
+    margin: auto;
+}
+
+.login {
+    width: 100%;
+    height: 140%;
+    /* background: var(--purple-accent); */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+button,
+input {
+    background: #000;
+}
+
+button {
+    background: var(--purple-accent);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    border: 2px solid var(--purple);
+}
+
+button:hover {
+    background: var(--purple);
+    border: 2px solid var(--purple-accent);
+    animation: huechange 5s infinite;
+
+}
+
+input {
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--gray);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--purple);
+}
+
+form h3 {
+    font-size: 2em;
+    letter-spacing: 1.5vw;
+    text-align: center;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.about h3 {
+    font-size: 2em;
+    letter-spacing: 1.2vw;
+    text-align: center;
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.about p {
+    margin-top: 0;
+    font-size: 1em;
+    padding: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+    padding-top: 0.3em;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+
+/*
+    _    ____  __  __ ___ _   _ 
+   / \  |  _ \|  \/  |_ _| \ | |
+  / _ \ | | | | |\/| || ||  \| |
+ / ___ \| |_| | |  | || || |\  |
+/_/   \_\____/|_|  |_|___|_| \_|
+               */
+.slideshow{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+}
+
+.slide{
+    padding: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.slide form{
+    /* border: 2px dotted #000; */
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    text-align: center;
+}
+.slideshow #left, .slideshow #right{
+    position: absolute;
+    top: 50%;
+}
+.slideshow #left{
+    left: 0;
+}
+
+.slideshow #right{
+    right: 0;
+}
+
+.slide select, .slide input, .slide button{
+    align-self: center;
+}
